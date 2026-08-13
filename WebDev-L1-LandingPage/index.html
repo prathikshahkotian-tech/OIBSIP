@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaEdge — Digital Solutions for Growing Businesses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Nova<span>Edge</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-btn">Get Started</a>
+            <!-- Hamburger menu check box for mobile nav -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="mobile-nav">
+                <ul class="mobile-nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">DIGITAL SOLUTIONS • BUILT FOR GROWTH</div>
+                    <h1>Build Better.<br><span class="text-gradient">Grow Faster.</span><br>Stay Ahead.</h1>
+                    <p>We are a premium digital technology company helping businesses transform their ideas into scalable, modern digital products.</p>
+                    <div class="hero-buttons">
+                        <a href="#solutions" class="btn btn-primary">Explore Our Solutions</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="abstract-shape shape-1"></div>
+                    <div class="abstract-shape shape-2"></div>
+                    <div class="hero-dashboard">
+                        <div class="dash-main">
+                            <div class="dash-header">
+                                <div class="dash-dots"><span></span><span></span><span></span></div>
+                                <div class="dash-tabs"><div class="dash-tab active">Overview</div><div class="dash-tab">Analytics</div></div>
+                            </div>
+                            <div class="dash-body">
+                                <div class="dash-chart-container">
+                                    <div class="dash-chart-header">
+                                        <span class="dash-title">Revenue Growth</span>
+                                        <span class="dash-badge">+24.5%</span>
+                                    </div>
+                                    <div class="dash-chart">
+                                        <svg viewBox="0 0 100 40" preserveAspectRatio="none" class="chart-line">
+                                            <path d="M0 40 Q 10 30, 25 35 T 50 20 T 75 15 T 100 5 L 100 40 L 0 40 Z" fill="rgba(37,99,235,0.1)"></path>
+                                            <path d="M0 40 Q 10 30, 25 35 T 50 20 T 75 15 T 100 5" fill="none" stroke="var(--clr-accent)" stroke-width="2"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="dash-stats">
+                                    <div class="dash-stat-box">
+                                        <div class="stat-icon icon-users"></div>
+                                        <div class="stat-info">
+                                            <span class="stat-value">12.4K</span>
+                                            <span class="stat-label">Active Users</span>
+                                        </div>
+                                    </div>
+                                    <div class="dash-stat-box">
+                                        <div class="stat-icon icon-sales"></div>
+                                        <div class="stat-info">
+                                            <span class="stat-value">$84.2K</span>
+                                            <span class="stat-label">Total Sales</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dash-float float-1">
+                            <div class="float-icon">✓</div>
+                            <div class="float-text">
+                                <span class="float-title">System Secure</span>
+                                <span class="float-sub">Updated 2m ago</span>
+                            </div>
+                        </div>
+                        <div class="dash-float float-2">
+                            <div class="float-ring">
+                                <div class="ring-circle">78%</div>
+                            </div>
+                            <div class="float-text">
+                                <span class="float-title">Performance</span>
+                                <span class="float-sub">Optimized</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Stats Strip -->
+        <section class="trust-stats">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Support</p>
+                </div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Years of Expertise</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Section -->
+        <section id="solutions" class="solutions section-padding bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Solutions That Move Your Business Forward</h2>
+                    <p>Comprehensive digital services designed to scale and optimize your operations.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="service-card">
+                        <div class="card-icon icon-web" aria-hidden="true"></div>
+                        <h3>Web Development</h3>
+                        <p>Custom, responsive websites built with modern technologies for optimal performance.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon icon-design" aria-hidden="true"></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Intuitive user interfaces and engaging experiences that delight your customers.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon icon-cloud" aria-hidden="true"></div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable cloud infrastructure to keep your business running smoothly and securely.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-icon icon-strategy" aria-hidden="true"></div>
+                        <h3>Digital Strategy</h3>
+                        <p>Data-driven insights and roadmaps to ensure your long-term digital success.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-us" class="why-us section-padding">
+            <div class="container split-layout">
+                <div class="split-visual premium-dash" aria-hidden="true">
+                    <!-- Background Decorative Elements -->
+                    <div class="premium-glow glow-1"></div>
+                    <div class="premium-glow glow-2"></div>
+                    
+                    <!-- Main Dashboard -->
+                    <div class="premium-dashboard">
+                        <!-- Dashboard Header -->
+                        <div class="premium-dash-header">
+                            <div class="pd-logo">
+                                <div class="pd-logo-icon"></div>
+                                <span class="pd-logo-text">NovaEdge</span>
+                            </div>
+                            <div class="pd-nav">
+                                <span class="pd-nav-item active"></span>
+                                <span class="pd-nav-item"></span>
+                                <span class="pd-nav-item"></span>
+                            </div>
+                        </div>
+                        
+                        <!-- Dashboard Body -->
+                        <div class="premium-dash-body">
+                            <!-- Metrics Row -->
+                            <div class="pd-metrics">
+                                <div class="pd-metric-card">
+                                    <span class="pd-metric-title">Revenue Growth</span>
+                                    <span class="pd-metric-value">+28%</span>
+                                    <div class="pd-metric-indicator positive">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 15l7-7 7 7"/></svg>
+                                    </div>
+                                </div>
+                                <div class="pd-metric-card">
+                                    <span class="pd-metric-title">Active Users</span>
+                                    <span class="pd-metric-value">12.8K</span>
+                                    <div class="pd-metric-indicator">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                    </div>
+                                </div>
+                                <div class="pd-metric-card">
+                                    <span class="pd-metric-title">Conversion Rate</span>
+                                    <span class="pd-metric-value">64%</span>
+                                    <div class="pd-metric-indicator neutral">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Chart Area -->
+                            <div class="pd-chart-area">
+                                <div class="pd-chart-header">
+                                    <span class="pd-chart-title">Business Growth Overview</span>
+                                    <div class="pd-chart-filters">
+                                        <span class="pd-filter active">1W</span>
+                                        <span class="pd-filter">1M</span>
+                                        <span class="pd-filter">1Y</span>
+                                    </div>
+                                </div>
+                                <div class="pd-chart">
+                                    <!-- Grid Lines -->
+                                    <div class="pd-grid-lines">
+                                        <span></span><span></span><span></span><span></span>
+                                    </div>
+                                    <!-- Area Chart -->
+                                    <svg viewBox="0 0 400 120" preserveAspectRatio="none" class="pd-area-chart">
+                                        <defs>
+                                            <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="0%" stop-color="var(--clr-accent)" stop-opacity="0.3" />
+                                                <stop offset="100%" stop-color="var(--clr-accent)" stop-opacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M0,100 C40,90 80,60 120,70 C160,80 200,40 240,50 C280,60 320,20 360,30 C380,35 400,10 400,10 L400,120 L0,120 Z" fill="url(#chart-gradient)"></path>
+                                        <path d="M0,100 C40,90 80,60 120,70 C160,80 200,40 240,50 C280,60 320,20 360,30 C380,35 400,10 400,10" fill="none" stroke="var(--clr-accent)" stroke-width="3"></path>
+                                        
+                                        <!-- Data Points -->
+                                        <circle cx="120" cy="70" r="4" fill="white" stroke="var(--clr-accent)" stroke-width="2"/>
+                                        <circle cx="240" cy="50" r="4" fill="white" stroke="var(--clr-accent)" stroke-width="2"/>
+                                        <circle cx="360" cy="30" r="4" fill="white" stroke="var(--clr-accent)" stroke-width="2"/>
+                                        
+                                        <!-- Tooltip -->
+                                        <g transform="translate(330, 0)">
+                                            <rect width="60" height="24" rx="4" fill="var(--clr-primary)"/>
+                                            <text x="360" y="16" fill="white" font-size="12" font-weight="bold" text-anchor="middle">$142k</text>
+                                            <path d="M360 24 L356 28 L364 28 Z" fill="var(--clr-primary)"/>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Widget -->
+                    <div class="premium-float-widget">
+                        <div class="pf-progress-ring">
+                            <span>85%</span>
+                        </div>
+                        <div class="pf-details">
+                            <span class="pf-title">System Health</span>
+                            <span class="pf-status"><span class="pf-dot"></span> Excellent</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-content">
+                    <h2>Why Businesses Choose NovaEdge</h2>
+                    <p class="subtitle">We deliver more than just code. We deliver business value.</p>
+                    
+                    <ul class="advantages-list">
+                        <li>
+                            <div class="advantage-icon" aria-hidden="true">✓</div>
+                            <div class="advantage-text">
+                                <h4>Business-focused solutions</h4>
+                                <p>We align our technical strategies with your business goals.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="advantage-icon" aria-hidden="true">✓</div>
+                            <div class="advantage-text">
+                                <h4>Modern technology</h4>
+                                <p>We use the latest tools to ensure your product is future-proof.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="advantage-icon" aria-hidden="true">✓</div>
+                            <div class="advantage-text">
+                                <h4>Reliable support</h4>
+                                <p>Our team is always ready to assist you, day or night.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="advantage-icon" aria-hidden="true">✓</div>
+                            <div class="advantage-text">
+                                <h4>Scalable architecture</h4>
+                                <p>Built to grow with your business, handling any amount of traffic.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding bg-dark text-light">
+            <div class="container text-center max-w-800">
+                <h2>Technology With Purpose</h2>
+                <div class="about-text">
+                    <p>At NovaEdge, we believe that technology should serve a clear purpose. We are a dedicated digital technology company committed to helping businesses transform their innovative ideas into robust, scalable digital products.</p>
+                    <p>Our team of expert developers, designers, and strategists work collaboratively to bridge the gap between complex technical challenges and elegant, user-friendly solutions. We don't just build software; we build the foundation for your future growth.</p>
+                </div>
+                <a href="#contact" class="btn btn-primary mt-4">Let's Build Something Great</a>
+            </div>
+        </section>
+
+        <!-- Work Process Section -->
+        <section class="work-process section-padding bg-alt">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Our Proven Process</h2>
+                    <p>A streamlined approach to deliver excellence every time.</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3>Discover</h3>
+                        <p>We analyze your needs and understand your business goals deep down.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3>Plan</h3>
+                        <p>We craft a detailed roadmap and architectural strategy.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3>Build</h3>
+                        <p>Our experts develop your solution using agile methodologies.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3>Launch</h3>
+                        <p>We deploy, test, and ensure a smooth rollout for your users.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>What Our Clients Say</h2>
+                    <p>Don't just take our word for it.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="quote">"NovaEdge transformed our outdated digital presence into a platform our customers actually enjoy using. Their attention to detail is unmatched."</p>
+                        <div class="client-info">
+                            <div class="avatar avatar-1" aria-hidden="true">SJ</div>
+                            <div class="client-details">
+                                <h4>Sarah Jenkins</h4>
+                                <span>CTO, TechFlow Inc.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="quote">"Working with the NovaEdge team was a breeze. They delivered our scalable cloud solution on time and exceeded all our performance expectations."</p>
+                        <div class="client-info">
+                            <div class="avatar avatar-2" aria-hidden="true">MR</div>
+                            <div class="client-details">
+                                <h4>Michael Reed</h4>
+                                <span>Founder, NexaCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <p class="quote">"The UI/UX revamp they did for us increased our conversion rate by 40%. They truly understand how to design for the end user."</p>
+                        <div class="client-info">
+                            <div class="avatar avatar-3" aria-hidden="true">AL</div>
+                            <div class="client-details">
+                                <h4>Amanda Lin</h4>
+                                <span>Product Manager, Elevate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta section-padding bg-gradient text-light">
+            <div class="container text-center">
+                <h2>Ready to Turn Your Idea Into Reality?</h2>
+                <p>Let's create a digital experience that helps your business move forward.</p>
+                <a href="#contact" class="btn btn-light mt-4">Start a Conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo text-light">Nova<span>Edge</span></a>
+                    <p>Digital solutions tailored for ambitious, growing businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: hello@novaedge-fictional.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                    <p>Location: 100 Tech Innovation Way, Suite 400</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-ph" aria-label="LinkedIn">LI</a>
+                        <a href="#" class="social-ph" aria-label="Twitter">TW</a>
+                        <a href="#" class="social-ph" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NovaEdge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

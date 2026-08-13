@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Pro | Tempora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <div class="brand">
+                <span class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2v10m0 0a4 4 0 100 8 4 4 0 000-8zm0-10C9.79 2 8 3.79 8 6v6m4-10c2.21 0 4 1.79 4 4v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <div class="brand-text">
+                    <h1>Tempora</h1>
+                    <span class="subtitle">Smart Temperature Converter</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#converter-section">Converter</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="status-indicator">
+                <span class="dot"></span>
+                <span>Real-time Conversion</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="badge">PRECISION TEMPERATURE CONVERSION</span>
+                    <h2>Convert Temperatures Instantly.</h2>
+                    <p>Accurately convert Celsius, Fahrenheit, and Kelvin values with real-time validation and clear results. Built for precision.</p>
+                    <a href="#converter-section" class="btn btn-primary">Start Converting</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-wrapper">
+                        <div class="glass-card visual-card-1">
+                            <span class="unit-label">°C</span>
+                            <span class="unit-val">25.0</span>
+                        </div>
+                        <div class="glass-card visual-card-2">
+                            <span class="unit-label">°F</span>
+                            <span class="unit-val">77.0</span>
+                        </div>
+                        <div class="glass-card visual-card-3">
+                            <span class="unit-label">K</span>
+                            <span class="unit-val">298.15</span>
+                        </div>
+                        <div class="thermometer-graphic">
+                            <div class="glass-tube">
+                                <div class="liquid"></div>
+                            </div>
+                            <div class="bulb"></div>
+                        </div>
+                        <div class="bg-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="converter-section" class="converter-area bg-light">
+            <div class="container">
+                <div class="converter-card shadow-lg">
+                    <div class="converter-header">
+                        <h3>Temperature Converter</h3>
+                        <p>Enter a value and select the unit to see accurate conversions.</p>
+                    </div>
+
+                    <form id="converter-form" class="converter-form" novalidate>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="temp-input">Temperature Value</label>
+                                <div class="input-wrapper">
+                                    <input type="number" id="temp-input" placeholder="Enter temperature" step="any" required>
+                                </div>
+                                <span class="error-message" id="input-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label for="unit-select">Convert From</label>
+                                <div class="select-wrapper">
+                                    <select id="unit-select">
+                                        <option value="celsius">Celsius (°C)</option>
+                                        <option value="fahrenheit">Fahrenheit (°F)</option>
+                                        <option value="kelvin">Kelvin (K)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="action-row">
+                            <button type="submit" class="btn btn-primary w-full">Convert Temperature</button>
+                            <button type="button" id="reset-btn" class="btn btn-ghost">Reset</button>
+                        </div>
+                    </form>
+
+                    <div id="results-container" class="results-container hidden">
+                        <!-- Results will be injected here via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-reference" class="quick-reference">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Quick Reference</h2>
+                    <p>Common temperature conversions at a glance.</p>
+                </div>
+                <div class="reference-grid">
+                    <div class="ref-card">
+                        <div class="ref-icon text-blue">❄️ Freezing</div>
+                        <div class="ref-values">
+                            <span><strong>0</strong> °C</span>
+                            <span class="divider">=</span>
+                            <span><strong>32</strong> °F</span>
+                            <span class="divider">=</span>
+                            <span><strong>273.15</strong> K</span>
+                        </div>
+                    </div>
+                    <div class="ref-card">
+                        <div class="ref-icon text-green">🌡️ Room Temp</div>
+                        <div class="ref-values">
+                            <span><strong>25</strong> °C</span>
+                            <span class="divider">=</span>
+                            <span><strong>77</strong> °F</span>
+                            <span class="divider">=</span>
+                            <span><strong>298.15</strong> K</span>
+                        </div>
+                    </div>
+                    <div class="ref-card">
+                        <div class="ref-icon text-orange">🔥 Boiling</div>
+                        <div class="ref-values">
+                            <span><strong>100</strong> °C</span>
+                            <span class="divider">=</span>
+                            <span><strong>212</strong> °F</span>
+                            <span class="divider">=</span>
+                            <span><strong>373.15</strong> K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>How It Works</h2>
+                    <p>Three simple steps to instant, accurate results.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-num">01</div>
+                        <h4>Enter a temperature</h4>
+                        <p>Type any valid numeric value. Decimals and negatives are fully supported.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">02</div>
+                        <h4>Select the input unit</h4>
+                        <p>Choose your starting scale from Celsius, Fahrenheit, or Kelvin.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">03</div>
+                        <h4>View accurate conversions</h4>
+                        <p>Instantly see the value converted to all other standard temperature units.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="features-section">
+            <div class="container">
+                <div class="features-flex">
+                    <div class="features-text">
+                        <h2>Built for Accuracy</h2>
+                        <p>Tempora provides quick conversions between Celsius, Fahrenheit and Kelvin. We've built in advanced validation to prevent invalid values and strictly enforce absolute-zero limits across all units.</p>
+                    </div>
+                    <div class="features-list-grid">
+                        <div class="feat-item">
+                            <span class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span>Three temperature units</span>
+                        </div>
+                        <div class="feat-item">
+                            <span class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span>Accurate conversion formulas</span>
+                        </div>
+                        <div class="feat-item">
+                            <span class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span>Real-time feedback</span>
+                        </div>
+                        <div class="feat-item">
+                            <span class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span>Input validation</span>
+                        </div>
+                        <div class="feat-item">
+                            <span class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span>Absolute-zero protection</span>
+                        </div>
+                        <div class="feat-item">
+                            <span class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span>Responsive design</span>
+                        </div>
+                        <div class="feat-item">
+                            <span class="check-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.6666 5L7.49992 14.1667L3.33325 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span>Simple user experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="brand-text">
+                        <span class="footer-logo">Tempora</span>
+                        <span class="subtitle">Smart Temperature Converter</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-col">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#converter-section">Converter</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-col">
+                        <h5>Technology</h5>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Vanilla JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tempora. Built as part of the OIBSIP Web Development Internship.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
